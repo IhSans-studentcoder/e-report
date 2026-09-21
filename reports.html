@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | E-Report IDN</title>
+    <link rel="shortcut icon" href="./assets/images/idn.jpeg" type="image/x-icon">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- CDN Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- CDN Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- CDN AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDownBig">
+  <div class="container">
+
+     <a class="navbar-brand" href="#">
+      <img src="./assets/images/idn.jpeg" alt="Logo" width="30" class="d-inline-block align-text-top rounded">
+      <span class="fw-bold text-primary">E-Report IDN</span>
+    </a>
+    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-primary active" aria-current="page" href="index.html#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="index.html#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="index.html#service">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="index.html#recent">Recent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    </nav>
+
+    <!-- semua laporan -->
+     <section id="reports">
+        <div class="container">
+            <!-- Judul -->
+             <div class="text-center">
+                <h1 class="fw-bold text-primary-emphasis">Semua Laporan</h1>
+                <p class="text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, porro necessitatibus? Enim rem itaque quae temporibus at ullam delectus ducimus? Sint, quas. Necessitatibus, perferendis odit!</p>
+             </div>
+
+            <!-- Filter -->
+             <div class="row gap-3 gap-md-0 mt-5">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Cari Laporan...">
+                </div>
+                <div class="col">
+                    <select class="form-select">
+                        <option value="">Pilih Kategori</option>
+                        <option value="akademik">Akademik</option>
+                        <option value="fasilitas">Fasilitas</option>
+                        <option value="anonymus">Anonymus</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-select">
+                        <option value="">Pilih Urutkan</option>
+                        <option value="terbaru">Terbaru</option>
+                        <option value="terlama">Terlama</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary w-100">
+                        <i class="fa-solid fa-filter"></i>
+                        Filter
+                    </button>
+                </div>
+             </div>
+
+            <!-- Reports -->
+             <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card" style="">
+                    <div class="kategori position-absolute px-3 py-2 rounded-end">
+                        <a class="text-white text-decoration-none" href="">Akademik</a>
+                    </div>
+                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Konflik Jadwal</h5>
+                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 2 month ago</small>
+                        <p class="card-text mt-4">Santri kesulitan membagi waktu karena jadwal setoran hafalan Al-Qur'an berdekatan dengan tenggat waktu (deadline) tugas proyek perakitan mesin atau pembuatan aplikasi web. Dan santri pun kesusahan.</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card" style="">
+                    <div class="kategori position-absolute px-3 py-2 rounded-end">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                    </div>
+                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Komputer yang Macet</h5>
+                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 3 weeks ago </small>
+                        <p class="card-text mt-4">Komputer di laboratorium multimedia sering macet saat dipakai rendering video, bersamaan dengan fasilitas air bersih di kamar mandi asrama yang sering mati saat jam mandi subuh.</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card" style="">
+                    <div class="kategori position-absolute px-3 py-2 rounded-end">
+                        <a class="text-white text-decoration-none" href="">Anonymus</a>
+                    </div>
+                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bullying di Asrama</h5>
+                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 1 week ago </small>
+                        <p class="card-text mt-4">Laporan rahasia mengenai adanya tindakan perundungan (bullying) fisik atau pemalakan uang jajan yang dilakukan oleh oknum pengurus asrama senior kepada santri baru di kamar belakang.</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card" style="">
+                    <div class="kategori position-absolute px-3 py-2 rounded-end">
+                        <a class="text-white text-decoration-none" href="">Akademik</a>
+                    </div>
+                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Konflik Jadwal</h5>
+                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 2 month ago</small>
+                        <p class="card-text mt-4">Santri kesulitan membagi waktu karena jadwal setoran hafalan Al-Qur'an berdekatan dengan tenggat waktu (deadline) tugas proyek perakitan mesin atau pembuatan aplikasi web. Dan santri pun kesusahan.</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card" style="">
+                    <div class="kategori position-absolute px-3 py-2 rounded-end">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                    </div>
+                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Komputer yang Macet</h5>
+                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 3 weeks ago </small>
+                        <p class="card-text mt-4">Komputer di laboratorium multimedia sering macet saat dipakai rendering video, bersamaan dengan fasilitas air bersih di kamar mandi asrama yang sering mati saat jam mandi subuh.</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card" style="">
+                    <div class="kategori position-absolute px-3 py-2 rounded-end">
+                        <a class="text-white text-decoration-none" href="">Anonymus</a>
+                    </div>
+                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bullying di Asrama</h5>
+                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 1 week ago </small>
+                        <p class="card-text mt-4">Laporan rahasia mengenai adanya tindakan perundungan (bullying) fisik atau pemalakan uang jajan yang dilakukan oleh oknum pengurus asrama senior kepada santri baru di kamar belakang.</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                    </div>
+                </div>
+                </div>
+             </div>
+
+            <!-- Pagination -->
+             <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center mt-5">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+             </nav>
+        </div>
+     </section>
+                
+    
+    <!-- footer -->
+      <footer class="bg-primary-subtle pb-4">
+        <div class="container">
+          <div class="row py-5 row-gap-4 justify-content-between">
+            <div class="col-md-4 text-primary">
+              <div class="mb-2 d-flex align-items-center gap-2">
+                <img width="30" src="./assets/images/idn.jpeg" alt="E-report IDN Logo" class=" d-inline-block align-text-top rounded">
+                  <h3 class="mb-0 fw-bold">E-report IDN</h3>
+                </div>
+                <p class="lh-lg m-0 opacity-75">E-report IDN adalah platform pengaduan online yang memungkinkan masyarakat untuk menyampaikan keluhan atau laporan terkait layanan publik secara cepat dan efisien.</p>
+            </div>
+              <div class="col-md-3 text-primary mb-2 d-flex flex-column gap-1">
+                <h4 class="fw-bold">Menu</h4>
+                <a href="index.html#home" class="text-decoration-none opacity-75">Home</a>
+                <a href="index.html#about" class="text-decoration-none opacity-75">About</a>
+                <a href="index.html#contact" class="text-decoration-none opacity-75">Contact</a>
+                <a href="index.html#services" class="text-decoration-none opacity-75">Services</a>
+                <a href="index.html#recent" class="text-decoration-none opacity-75">Recent</a>
+                <a href="index.html#faq" class="text-decoration-none opacity-75">FAQ</a>
+              </div>  
+
+              <div class="col-md-4 text-primary mb-2 d-flex flex-column gap-2">
+                <h4 class="fw-bold">Contact</h4>
+                <a target="_blank" href="mailto:ihsannurfajri24@gmail.com" class="d-flex align-items-center text-decoration-none gap-3">
+                  <i class="fa-solid fa-envelope me-2"></i>
+                  ihsannurfajri24@gmail.com
+                </a>
+                <a target="_blank" href="https://wa.me/6285177581380" class="d-flex align-items-center text-decoration-none gap-3">
+                 <i class="fa-brands fa-whatsapp"></i>
+                  +62 851-7758-1380
+                </a>
+                <a target="_blank" href="https://www.google.com/maps/dir/-6.5253396,107.0381069/SMP+%26+SMK+IDN+Boarding+School,+Jl.+Raya+Jonggol-Dayeuh,+Sukanegara,+Jonggol,+Bogor+Regency,+West+Java+16830/@-6.5253467,107.0353586,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69bc6e5be3d9bd:0x6b9881dabd801476!2m2!1d107.0381356!2d-6.5252823?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D" class="d-flex align-items-center text-decoration-none gap-3">
+                 <i class="fa-solid fa-map-location-dot"></i>
+                  Jl. Raya Jonggol-Dayeuh, Sukanegara, Jonggol, Bogor Regency, West Java 16830
+                </a>
+            </div>
+          </div>
+          <div class="copyright text-primary text-center">
+            <p>&copy; Copyright by <span class="fw-bold">Ihsan Nur Fajri</span> 2026, All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <!-- JS Bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+    <!-- CDN AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
