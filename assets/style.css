@@ -1,8 +1,20 @@
 /* My Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Hairline&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Michroma&family=Oswald:wght@200..700&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bangers&family=Bitcount+Ink:wght@100..900&family=Bungee+Hairline&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Eater&family=Galindo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=New+Rocker&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playwrite+VN:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Teko:wght@300..700&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #E8F5E9;
+}
+
+.rounded-image {
+    border-radius: 50px;
+    box-shadow: 19px 19px 0px rgba(25, 135, 84, 1); 
+}
+
+.rounded-image-sm {
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px rgba(25, 135, 84, 1); 
 }
 
 .hero .col img {
@@ -21,6 +33,37 @@ section {
 .kategori {
     background-color: rgba(0, 0, 0, 0.3);
     
+}
+
+.font-keren {
+  font-family: "Galindo", sans-serif;
+}
+
+/* ===== Footer ===== */
+.footer {
+    width: 100%;
+}
+
+.footer-text {
+    opacity: 0.9;
+}
+
+.footer-link {
+    opacity: 0.85;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-link:hover {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+/* Ikon kontak dengan lebar tetap supaya teksnya rata */
+.footer-icon {
+    width: 24px;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 0.3rem;
 }
 
 @media screen and (max-width: 510px) {

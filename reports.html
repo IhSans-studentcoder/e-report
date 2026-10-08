@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | E-Report IDN</title>
-    <link rel="shortcut icon" href="./assets/images/idn.jpeg" type="image/x-icon">
+    <title>All Reports | E-Report IDN</title>
+    <link rel="shortcut icon" href="./assets/images/idn.png" type="image/x-icon">
 
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -23,12 +23,12 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDownBig">
+     <nav class="navbar navbar-expand-lg bg-success py-4 animate__animated animate__fadeInDownBig">
   <div class="container">
 
-     <a class="navbar-brand" href="#">
-      <img src="./assets/images/idn.jpeg" alt="Logo" width="30" class="d-inline-block align-text-top rounded">
-      <span class="fw-bold text-primary">E-Report IDN</span>
+     <a class="navbar-brand" href="index.html">
+      <img src="./assets/images/idn_logo.jpeg" alt="Logo" width="30" class="text-light d-inline-block align-text-top rounded">
+      <span class="fw-bold text-light">E-Report IDN</span>
     </a>
     <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -36,56 +36,64 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-primary active" aria-current="page" href="index.html#home">Home</a>
+          <a class="nav-link text-light active" aria-current="page" href="index.html  ">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-primary" href="index.html#about">About</a>
+          <a class="nav-link text-light" href="index.html#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-primary" href="index.html#service">Services</a>
+          <a class="nav-link text-light" href="index.html#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-primary" href="index.html#recent">Recent</a>
+          <a class="nav-link text-light" href="index.html#recent">Recent</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
+          <a class="nav-link text-light" href="index.html#faq">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="guide.html">Guide</a>
         </li>
       </ul>
     </div>
   </div>
-    </nav>
+     </nav>
 
-    <!-- semua laporan -->
+    <!-- All reports -->
      <section id="reports">
         <div class="container">
-            <!-- Judul -->
-             <div class="text-center">
-                <h1 class="fw-bold text-primary-emphasis">Semua Laporan</h1>
-                <p class="text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, porro necessitatibus? Enim rem itaque quae temporibus at ullam delectus ducimus? Sint, quas. Necessitatibus, perferendis odit!</p>
+            <!-- Title -->
+             <div class="d-flex flex-column flex-lg-row text-center text-lg-start align-items-center justify-content-between gap-2">
+                <div class="col-lg-8">
+                  <h1 class="fw-bold text-success-emphasis"><i class="fa-solid fa-newspaper"></i> All Reports</h1>
+                  <p class="text-secondary lh-lg">See what others have reported and how the school is responding. Have a concern of your own? Add a new report in just a few steps.</p>
+                </div>
+                <div class="col-lg-2">
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Add Report</button>
+                </div>
              </div>
 
             <!-- Filter -->
              <div class="row gap-3 gap-md-0 mt-5">
                 <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Cari Laporan...">
+                    <input type="text" class="form-control" placeholder="Search reports...">
                 </div>
                 <div class="col">
                     <select class="form-select">
-                        <option value="">Pilih Kategori</option>
-                        <option value="akademik">Akademik</option>
-                        <option value="fasilitas">Fasilitas</option>
-                        <option value="anonymus">Anonymus</option>
+                        <option value="">Select Category</option>
+                        <option value="akademik">Academic</option>
+                        <option value="fasilitas">Facility</option>
+                        <option value="anonymous">Anonymous</option>
                     </select>
                 </div>
                 <div class="col">
                     <select class="form-select">
-                        <option value="">Pilih Urutkan</option>
-                        <option value="terbaru">Terbaru</option>
-                        <option value="terlama">Terlama</option>
+                        <option value="">Sort By</option>
+                        <option value="terbaru">Newest</option>
+                        <option value="terlama">Oldest</option>
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <button class="btn btn-primary w-100">
+                    <button class="btn btn-success w-100">
                         <i class="fa-solid fa-filter"></i>
                         Filter
                     </button>
@@ -97,84 +105,84 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card" style="">
                     <div class="kategori position-absolute px-3 py-2 rounded-end">
-                        <a class="text-white text-decoration-none" href="">Akademik</a>
+                        <a class="text-white text-decoration-none" href="">Academic</a>
                     </div>
                     <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-1.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Konflik Jadwal</h5>
-                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 2 month ago</small>
-                        <p class="card-text mt-4">Santri kesulitan membagi waktu karena jadwal setoran hafalan Al-Qur'an berdekatan dengan tenggat waktu (deadline) tugas proyek perakitan mesin atau pembuatan aplikasi web. Dan santri pun kesusahan.</p>
-                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                        <h5 class="card-title">Schedule Conflict</h5>
+                        <small>By: <a href="" class="text-success text-decoration-none">Overcommited</a> 2 months ago</small>
+                        <p class="card-text mt-4">The students struggle to manage their time because their extracurricular commitments coincide with the deadlines for projects involving machine assembly or web application development.</p>
+                        <a href="detail-report.html" class="btn btn-success">Read More...</a>
                     </div>
                 </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card" style="">
                     <div class="kategori position-absolute px-3 py-2 rounded-end">
-                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                        <a class="text-white text-decoration-none" href="">Facility</a>
                     </div>
                     <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-2.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Komputer yang Macet</h5>
-                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 3 weeks ago </small>
-                        <p class="card-text mt-4">Komputer di laboratorium multimedia sering macet saat dipakai rendering video, bersamaan dengan fasilitas air bersih di kamar mandi asrama yang sering mati saat jam mandi subuh.</p>
-                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                        <h5 class="card-title">Freezing Computers</h5>
+                        <small>By: <a href="" class="text-success text-decoration-none">1H$4N.exe</a> 1 month ago </small>
+                        <p class="card-text mt-4">Computers in the multimedia lab often freeze when used for video rendering, while the clean water supply in the dormitory bathrooms frequently cuts out during the pre-dawn bathing hours.</p>
+                        <a href="detail-report.html" class="btn btn-success">Read More...</a>
                     </div>
                 </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card" style="">
                     <div class="kategori position-absolute px-3 py-2 rounded-end">
-                        <a class="text-white text-decoration-none" href="">Anonymus</a>
+                        <a class="text-white text-decoration-none" href="">Anonymous</a>
                     </div>
                     <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-3.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Bullying di Asrama</h5>
-                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 1 week ago </small>
-                        <p class="card-text mt-4">Laporan rahasia mengenai adanya tindakan perundungan (bullying) fisik atau pemalakan uang jajan yang dilakukan oleh oknum pengurus asrama senior kepada santri baru di kamar belakang.</p>
-                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                        <h5 class="card-title">Bullying in the Dormitory</h5>
+                        <small>By: <a href="" class="text-success text-decoration-none">Unknown Anonymous</a> 1 year ago </small>
+                        <p class="card-text mt-4">A confidential report about physical bullying or extortion of pocket money carried out by certain senior dormitory officers against new students in the back room.</p>
+                        <a href="detail-report.html" class="btn btn-success">Read More...</a>
                     </div>
                 </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card" style="">
                     <div class="kategori position-absolute px-3 py-2 rounded-end">
-                        <a class="text-white text-decoration-none" href="">Akademik</a>
+                        <a class="text-white text-decoration-none" href="">Facility</a>
                     </div>
-                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-1.png" class="card-img-top" alt="...">
+                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-4.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Konflik Jadwal</h5>
-                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 2 month ago</small>
-                        <p class="card-text mt-4">Santri kesulitan membagi waktu karena jadwal setoran hafalan Al-Qur'an berdekatan dengan tenggat waktu (deadline) tugas proyek perakitan mesin atau pembuatan aplikasi web. Dan santri pun kesusahan.</p>
-                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                        <h5 class="card-title">Hazardous Sports Area</h5>
+                        <small>By: <a href="" class="text-success text-decoration-none">Varsity Dribblers</a> 6 months ago</small>
+                        <p class="card-text mt-4">The indoor sports area has not been maintained for a long time. The damaged floor and poor lighting make it dangerous, and it needs to be repaired as soon as possible.</p>
+                        <a href="detail-report.html" class="btn btn-success">Read More...</a>
                     </div>
                 </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card" style="">
                     <div class="kategori position-absolute px-3 py-2 rounded-end">
-                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                        <a class="text-white text-decoration-none" href="">Anonymous</a>
                     </div>
-                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-2.png" class="card-img-top" alt="...">
+                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-5.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Komputer yang Macet</h5>
-                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 3 weeks ago </small>
-                        <p class="card-text mt-4">Komputer di laboratorium multimedia sering macet saat dipakai rendering video, bersamaan dengan fasilitas air bersih di kamar mandi asrama yang sering mati saat jam mandi subuh.</p>
-                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                        <h5 class="card-title">Missing Items</h5>
+                        <small>By: <a href="" class="text-success text-decoration-none">Oliver Oblivious</a> 8 weeks ago </small>
+                        <p class="card-text mt-4">Several students have reported that their personal belongings, such as chargers, books, and clothes, have gone missing from the dormitory. The incidents keep happening, and no one knows who is responsible.</p>
+                        <a href="detail-report.html" class="btn btn-success">Read More...</a>
                     </div>
                 </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card" style="">
                     <div class="kategori position-absolute px-3 py-2 rounded-end">
-                        <a class="text-white text-decoration-none" href="">Anonymus</a>
+                        <a class="text-white text-decoration-none" href="">Academic</a>
                     </div>
-                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-3.png" class="card-img-top" alt="...">
+                    <img style="height: 300px; overflow: hidden; object-fit: cover;" src="./assets/images/report-6.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Bullying di Asrama</h5>
-                        <small>By: <a href="" class="text-decoration-none">Ihsan Nur Fajri</a> 1 week ago </small>
-                        <p class="card-text mt-4">Laporan rahasia mengenai adanya tindakan perundungan (bullying) fisik atau pemalakan uang jajan yang dilakukan oleh oknum pengurus asrama senior kepada santri baru di kamar belakang.</p>
-                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                        <h5 class="card-title">A Messy Classroom</h5>
+                        <small>By: <a href="" class="text-success text-decoration-none">Dustin Havoc</a> 1 month ago </small>
+                        <p class="card-text mt-4">Some students do not clean up after themselves and often leave their belongings scattered around the classroom. The mess keeps coming back, and it disturbs the learning atmosphere.</p>
+                        <a href="detail-report.html" class="btn btn-success">Read More...</a>
                     </div>
                 </div>
                 </div>
@@ -184,54 +192,95 @@
              <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center mt-5">
                     <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    <li class="page-item active"><a class="bg-success text-white page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="text-success page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="text-success page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="text-success page-link" href="#">Next</a></li>
                 </ul>
              </nav>
         </div>
      </section>
+
+    <!-- Add Modal -->
+      <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white fw-semibold">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel"><i class="fa-solid fa-pen-to-square"></i> Add Report Form</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="">
+              <div class="modal-body p-5">
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="">Report Title</label>
+                  <input class="form-control shadow-sm" type="text" placeholder="Enter a title...">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="">Select Category :</label>
+                  <select class="form-select shadow-sm">
+                    <option value="">Select a category...</option>
+                    <option value="akademik">Academic</option>
+                    <option value="fasilitas">Facility</option>
+                    <option value="anonymous">Anonymous</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="">Upload Image</label>
+                  <textarea rows="6" class="form-control shadow-sm" id="" placeholder="Write your report..."></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="">Report Content :</label>
+                  <input class="form-control shadow-sm" type="file" accept="image/*">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="reset" class="btn btn-secondary">Reset</button>
+                <button type="button" class="btn btn-success"><i class="fa-solid fa-paper-plane"></i>Submit Report</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
                 
     
     <!-- footer -->
-      <footer class="bg-primary-subtle pb-4 mt-5">
+      <footer class="bg-success pb-4 mt-5">
         <div class="container">
           <div class="row py-5 row-gap-4 justify-content-between">
-            <div class="col-md-4 text-primary">
+            <div class="col-md-4 text-light">
               <div class="mb-2 d-flex align-items-center gap-2">
-                <img width="30" src="./assets/images/idn.jpeg" alt="E-report IDN Logo" class=" d-inline-block align-text-top rounded">
-                  <h3 class="mb-0 fw-bold">E-report IDN</h3>
+                <img width="30" src="./assets/images/idn_logo.jpeg" alt="E-report IDN Logo" class=" d-inline-block align-text-top rounded">
+                  <h3 class="mb-0 fw-bold">E-Report IDN</h3>
                 </div>
-                <p class="lh-lg m-0 opacity-75">E-report IDN adalah platform pengaduan online yang memungkinkan masyarakat untuk menyampaikan keluhan atau laporan terkait layanan publik secara cepat dan efisien.</p>
+                <p class="lh-lg m-0 opacity-75">E-report IDN is an online complaint platform that enables the public to submit complaints or reports regarding public services quickly and efficiently.</p>
             </div>
-              <div class="col-md-3 text-primary mb-2 d-flex flex-column gap-1">
+              <div class="col-md-3 text-light mb-2 d-flex flex-column gap-1">
                 <h4 class="fw-bold">Menu</h4>
-                <a href="index.html#home" class="text-decoration-none opacity-75">Home</a>
-                <a href="index.html#about" class="text-decoration-none opacity-75">About</a>
-                <a href="index.html#contact" class="text-decoration-none opacity-75">Contact</a>
-                <a href="index.html#services" class="text-decoration-none opacity-75">Services</a>
-                <a href="index.html#recent" class="text-decoration-none opacity-75">Recent</a>
-                <a href="index.html#faq" class="text-decoration-none opacity-75">FAQ</a>
+                <a href="index.html" class="text-light text-decoration-none opacity-75 ">Home</a>
+                <a href="#about" class="text-light text-decoration-none opacity-75">About</a>
+                <a href="#services" class="text-light text-decoration-none opacity-75">Services</a>
+                <a href="#recent" class="text-light text-decoration-none opacity-75">Recent</a>
+                <a href="#faq" class="text-light text-decoration-none opacity-75">FAQ</a>
+                <a href="guide.html" class="text-light text-decoration-none opacity-75">Guide</a>
               </div>  
 
-              <div class="col-md-4 text-primary mb-2 d-flex flex-column gap-2">
+              <div class="col-md-4 text-light mb-2 d-flex flex-column gap-2">
                 <h4 class="fw-bold">Contact</h4>
-                <a target="_blank" href="mailto:ihsannurfajri24@gmail.com" class="d-flex align-items-center text-decoration-none gap-3">
+                <a target="_blank" href="mailto:ihsannurfajri24@gmail.com" class="text-light d-flex align-items-center text-decoration-none gap-3">
                   <i class="fa-solid fa-envelope me-2"></i>
                   ihsannurfajri24@gmail.com
                 </a>
-                <a target="_blank" href="https://wa.me/6285892018994" class="d-flex align-items-center text-decoration-none gap-3">
+                <a target="_blank" href="https://wa.me/6285892018994" class="text-light d-flex align-items-center text-decoration-none gap-3">
                  <i class="fa-brands fa-whatsapp"></i>
                   +62 858-9201-8994
                 </a>
-                <a target="_blank" href="https://www.google.com/maps/dir/-6.5253396,107.0381069/SMP+%26+SMK+IDN+Boarding+School,+Jl.+Raya+Jonggol-Dayeuh,+Sukanegara,+Jonggol,+Bogor+Regency,+West+Java+16830/@-6.5253467,107.0353586,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69bc6e5be3d9bd:0x6b9881dabd801476!2m2!1d107.0381356!2d-6.5252823?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D" class="d-flex align-items-center text-decoration-none gap-3">
+                <a target="_blank" href="https://www.google.com/maps/dir/-6.5253396,107.0381069/SMP+%26+SMK+IDN+Boarding+School,+Jl.+Raya+Jonggol-Dayeuh,+Sukanegara,+Jonggol,+Bogor+Regency,+West+Java+16830/@-6.5253467,107.0353586,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69bc6e5be3d9bd:0x6b9881dabd801476!2m2!1d107.0381356!2d-6.5252823?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D" class="text-light d-flex align-items-center text-decoration-none gap-3">
                  <i class="fa-solid fa-map-location-dot"></i>
                   Jl. Raya Jonggol-Dayeuh, Sukanegara, Jonggol, Bogor Regency, West Java 16830
                 </a>
             </div>
           </div>
-          <div class="copyright text-primary text-center">
+          <div class="copyright text-light text-center">
             <p>&copy; Copyright by <span class="fw-bold">Ihsan Nur Fajri</span> 2026, All Rights Reserved.</p>
           </div>
         </div>
